@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #f3f4f6;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-b-2 border-gray-300 focus:outline-none;
+  }
+}
+
+@layer utilities {
+  /* Add a custom primary color utility */
+  .text-primary {
+    color: #1d4ed8; /* Replace with your desired primary color */
+  }
+
+  .hover\:text-primary:hover {
+    color: #1d4ed8; /* Ensure hover works */
+  }
+}
